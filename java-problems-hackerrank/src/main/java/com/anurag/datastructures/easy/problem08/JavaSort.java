@@ -48,10 +48,13 @@ public class JavaSort {
             @Override
             public int compare(Student s1, Student s2) {
 
-
-                return Double.compare(s1.getCgpa(), s2.getCgpa()) == 0 ? (s1.getFname().compareTo(s2.getFname()) == 0 ? Integer.compare(s1.getId(), s2.getId()) : s1.getFname().compareTo(s2.getFname()))
-
-                        : -1 * Double.compare(s1.getCgpa(), s2.getCgpa());
+                if(Double.compare(s1.getCgpa(), s2.getCgpa())!=0){
+                    return -1 * Double.compare(s1.getCgpa(), s2.getCgpa());
+                }else if((s1.getFname().compareTo(s2.getFname()) !=0)){
+                    return s1.getFname().compareTo(s2.getFname());
+                }else {
+                    return Integer.compare(s1.getId(), s2.getId());
+                }
             }
         };
         Collections.sort(studentList, comparator);

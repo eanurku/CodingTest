@@ -1,4 +1,4 @@
-package com.anurag.oops.problem01;
+package com.anurag.oops.easy.problem01;
 
 import java.util.Scanner;
 

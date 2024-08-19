@@ -2,7 +2,7 @@ package com.anurag.template.scanner;
 
 import java.util.Scanner;
 
-public class ScannerReadStringIntDouble {
+public class ScannerReadIntDoubleString {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int testcases=scanner.nextInt();

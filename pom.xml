@@ -83,6 +83,7 @@
     <module>interview</module>
       
     <module>CodingTemplates</module>
+    <module>LeetCode</module>
   </modules>
     
 
